@@ -68,7 +68,7 @@ def ocr_connect(image_file):
         print(response.text)
 
 
-data = st.file_uploader("upload", tyepe=['png', 'jpg', 'jpeg'])
+data = st.file_uploader("upload", type=['png', 'jpg', 'jpeg'])
 
 if picture:
     ##OCR
