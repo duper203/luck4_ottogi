@@ -70,7 +70,7 @@ def ocr_connect(image_file):
 
 data = st.file_uploader("upload", type=['png', 'jpg', 'jpeg'])
 
-if picture:
+if data:
     ##OCR
     image = st.image(data)
     img = Image.open(data)
