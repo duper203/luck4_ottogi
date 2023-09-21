@@ -18,8 +18,8 @@ def convert_image(img):
     return byte_im
 
 def ocr_connect(image_file):
-    api_url = '----- naver api url -----'
-    secret_key = '----- naver secret key ------'
+    api_url = st.secrets["naver_api_url"]
+    secret_key = st.secrets["naver_secret_key"]
     
     keyword_list = []
     
