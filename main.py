@@ -20,12 +20,16 @@ if picture:
     #OCR
     st.image(picture)
     img = Image.open(picture)
-    text = pytesseract.image_to_string(img)
+
+    button = st.download_button("ocr")
+    if button:
+        text = pytesseract.image_to_string(img)
+        if text:
+            st.code(text, langauge='text')
+
 
     #다운로드 파일
-    st.image(picture)
-    image = Image.open(picture)
-    # print(convert_image(image))
-    st.download_button("Download fixed image", convert_image(image), "fixed.png", "image/png")
-if text:
-    st.code(text, langauge='text')
+    # st.image(picture)
+    # image = Image.open(picture)
+    # # print(convert_image(image))
+    # st.download_button("Download fixed image", convert_image(image), "fixed.png", "image/png")
