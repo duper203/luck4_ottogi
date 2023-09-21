@@ -17,9 +17,11 @@ def convert_image(img):
     return byte_im
     
 if picture:
-    #OCR
+    ##OCR
     st.image(picture)
     img = Image.open(picture)
+
+    ocr_pic = convert_image(img)
 
     button = st.button("ocr")
     if button:
@@ -28,8 +30,9 @@ if picture:
             st.code(text, langauge='text')
 
 
-    #다운로드 파일
+    ##다운로드 파일
     # st.image(picture)
     # image = Image.open(picture)
-    # # print(convert_image(image))
+    
+    # file_bytes = convert_image(image).read()
     # st.download_button("Download fixed image", convert_image(image), "fixed.png", "image/png")
