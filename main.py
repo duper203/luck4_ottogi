@@ -1,5 +1,7 @@
 import streamlit as st
 from PIL import Image
+from io import BytesIO
+import base64
 
 
 picture = st.camera_input("Take a picture")
