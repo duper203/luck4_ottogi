@@ -2,3 +2,4 @@ streamlit
 elasticsearch
 requests
 openai
+PIL
