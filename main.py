@@ -16,4 +16,5 @@ def convert_image(img):
 if picture:
     st.image(picture)
     image = Image.open(picture)
+    print(convert_image(image))
     st.download_button("Download fixed image", convert_image(image), "fixed.png", "image/png")
