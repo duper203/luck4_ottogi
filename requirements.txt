@@ -3,3 +3,5 @@ elasticsearch
 requests
 openai
 PIL
+io
+base64
