@@ -12,4 +12,4 @@ def convert_image(img):
 if picture:
     st.image(picture)
     image = Image.open(picture)
-    st.download_button("Download fixed image", convert_image(fixed), "fixed.png", "image/png")
+    st.download_button("Download fixed image", convert_image(image), "fixed.png", "image/png")
