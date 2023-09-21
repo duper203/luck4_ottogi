@@ -26,6 +26,7 @@ if picture:
 
     button = st.button("ocr")
     if button:
+        st.write("pushed")
         text = pytesseract.image_to_string(img)
         print(text)
         if text:
