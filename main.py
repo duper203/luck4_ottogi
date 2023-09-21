@@ -28,7 +28,8 @@ if picture:
     if button:
         st.write("pushed")
         text = pytesseract.image_to_string(img)
-        ocr_text = st.code(text, langauge='text')
+        ocr_text = st.code(text, language='text')
+
         st.write(ocr_text)
 
 
