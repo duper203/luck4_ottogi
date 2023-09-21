@@ -3,6 +3,10 @@ from PIL import Image
 from io import BytesIO
 import base64
 import pytesseract
+import requests
+import uuid
+import time
+import json
 
 data = None
 text = None
@@ -75,12 +79,10 @@ if picture:
     st.image(picture)
     img = Image.open(picture)
     button = st.button("ocr")
-    
    
-    
     if button:
-        ocr_pic = convert_image(img)
-        st.write(ocr_pic)
+        ocr_text = ocr_connect(convert_image(img))
+        st.write(ocr_text)
 
 
 
