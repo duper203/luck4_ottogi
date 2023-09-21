@@ -21,9 +21,12 @@ if picture:
     ##OCR
     st.image(picture)
     img = Image.open(picture)
-    ocr_pic = convert_image(img)
     button = st.button("ocr")
+    
+   
+    
     if button:
+        ocr_pic = convert_image(img)
         st.write(ocr_pic)
 
 
