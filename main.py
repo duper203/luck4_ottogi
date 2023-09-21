@@ -73,7 +73,7 @@ data = st.file_uploader("upload", type=['png', 'jpg', 'jpeg'])
 if data:
     ##OCR
     image = st.image(data)
-    img = Image.open(data)
+    # img = Image.open(data)
     button = st.button("ocr")
    
     if button:
