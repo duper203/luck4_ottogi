@@ -29,7 +29,7 @@ if picture:
         st.write("pushed")
         text = pytesseract.image_to_string(img)
         ocr_text = st.code(text, language='text')
-        st.writeO(str(ocr_text))
+        st.write(str(ocr_text))
 
 
 
