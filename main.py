@@ -11,9 +11,6 @@ import json
 data = None
 text = None
 
-
-picture = st.camera_input("Take a picture")
-
 # Download the fixed image
 def convert_image(img):
     buf = BytesIO()
@@ -73,15 +70,18 @@ def ocr_connect(image_file):
     else:
         print(f"API 요청 실패: {response.status_code}")
         print(response.text)
-    
+
+
+data = st.file_uploader("upload", tyepe=['png', 'jpg', 'jpeg'])
+
 if picture:
     ##OCR
-    st.image(picture)
-    img = Image.open(picture)
+    image = st.image(data)
+    img = Image.open(data)
     button = st.button("ocr")
    
     if button:
-        ocr_text = ocr_connect(convert_image(img))
+        ocr_text = ocr_connect(data)
         st.write(ocr_text)
 
 
