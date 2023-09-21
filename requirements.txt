@@ -2,6 +2,6 @@ streamlit
 elasticsearch
 requests
 openai
-PIL
+PIL==23.2.1
 io
 base64
