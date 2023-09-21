@@ -21,7 +21,7 @@ if picture:
     st.image(picture)
     img = Image.open(picture)
 
-    button = st.download_button("ocr")
+    button = st.button("ocr")
     if button:
         text = pytesseract.image_to_string(img)
         if text:
