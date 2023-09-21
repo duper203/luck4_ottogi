@@ -30,7 +30,10 @@ if picture:
         text = pytesseract.image_to_string(img)
         ocr_text = st.code(text, language='text')
 
-        st.write(ocr_text)
+        st.write(type(ocr_text))
+        print(ocr_text)
+        ocr_text = str(ocr_text)
+
 
 
     ##다운로드 파일
