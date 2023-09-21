@@ -1,4 +1,6 @@
 import streamlit as st
+from PIL import Image
+
 
 picture = st.camera_input("Take a picture")
 
