@@ -5,6 +5,7 @@ import base64
 import pytesseract
 
 data = None
+text = None
 
 
 picture = st.camera_input("Take a picture")
