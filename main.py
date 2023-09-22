@@ -7,6 +7,8 @@ import uuid
 import time
 import tempfile 
 import json
+from st_pages import Page, show_pages, add_page_title
+
 
 
 def ocr_connect(image_file):
