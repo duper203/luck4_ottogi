@@ -15,8 +15,8 @@ import json
 # secret_key = st.secrets["naver_secret_key"]
 
 def ocr_connect(image_file):
-    # api_url = st.secrets["naver_api_url"]
-    # secret_key = st.secrets["naver_secret_key"]
+    api_url = st.secrets["naver_api_url"]
+    secret_key = st.secrets["naver_secret_key"]
     
     keyword_list = []
     
