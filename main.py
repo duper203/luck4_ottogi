@@ -9,11 +9,6 @@ import tempfile
 import json
 
 
-
-# Define your Streamlit secrets here
-# api_url = st.secrets["naver_api_url"]
-# secret_key = st.secrets["naver_secret_key"]
-
 def ocr_connect(image_file):
     api_url = st.secrets["naver_api_url"]
     secret_key = st.secrets["naver_secret_key"]
@@ -63,7 +58,7 @@ def ocr_connect(image_file):
 
 st.title("OCR using Naver API")
 image_file = st.file_uploader("이미지 업로드", type=['png', 'jpg', 'jpeg'])
-
+ocr_keywords = ""
 if image_file:
     print("image_file:",image_file)
     if st.button("OCR 실행"):
@@ -74,21 +69,32 @@ if image_file:
             temp_image_path = temp_image.name
             ocr_text = ocr_connect(temp_image_path)
 
-            
-            
-            
-        
-        # output_image = image_file.read()
-        
-        
-        # # Convert the image to PNG format
-        # output_image = Image.open(image_file)
-        # output_image = image.convert("JPG")
-        # print("image:", output_image)
-        
-        # ocr_text = ocr_connect(output_image)
         
         if ocr_text:
             st.write("OCR 결과:")
+            
             for keyword in ocr_text:
+                
                 st.write(keyword)
+                ocr_keywords += keyword
+            
+            
+            headers ={
+                "Content-Type": "application/json; charset=utf-8"
+                
+            }
+        
+            body = {
+                "keyword": f"{ocr_keywords}"
+            }
+        
+        
+            res = requests.get(url="https://azvkqnar1c.execute-api.ap-northeast-2.amazonaws.com/default/luck4_ottogi", headers=headers, json=body)
+            
+            # print(res)
+            result = res.text.encode('utf-8').decode('unicode_escape')
+            print(result)
+            
+            res_dict = json.loads(res.text)
+            
+            print(res_dict)
