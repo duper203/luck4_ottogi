@@ -44,7 +44,6 @@ def ocr_connect(image_file):
     
     # print(response.text.encode('utf8'))
     
-    
     if response.status_code == 200:
         result = response.json()
         if 'images' in result:
