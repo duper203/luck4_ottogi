@@ -1,3 +1,7 @@
 streamlit
 elasticsearch
-
+requests
+openai
+llama-index
+nltk
+st_pages
