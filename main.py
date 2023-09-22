@@ -16,7 +16,7 @@ def ocr_connect(image_data):
     request_json = {
         'images': [
             {
-                'format': 'png',
+                'format': 'jpg',
                 'name': 'demo'
             }
         ],
