@@ -7,13 +7,9 @@ import uuid
 import time
 import json
 
-api_url = 'https://97c3ecilit.apigw.ntruss.com/custom/v1/24213/3330ee526497f746fcd16ae438b02b1fc334fb816c12edc24d4b448753f718c3/general'
-secret_key = 'a2d2bnVzTUVrYndHZEZ0RGxBd3pHV0ZXcXlQWlFNUVg='
-
-
 def ocr_connect(image_data):
-    # api_url = st.secrets["naver_api_url"]
-    # secret_key = st.secrets["naver_secret_key"]
+    api_url = st.secrets["naver_api_url"]
+    secret_key = st.secrets["naver_secret_key"]
     
     keyword_list = []
     
