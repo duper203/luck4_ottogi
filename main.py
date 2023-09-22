@@ -61,7 +61,7 @@ if image_file:
     if st.button("OCR 실행"):
         # Convert the image to PNG format
         image = Image.open(image_file)
-        image = image.convert("PNG")
+        image = image.convert("JPG")
         print("image:", image)
         
         
