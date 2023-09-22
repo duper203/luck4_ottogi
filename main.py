@@ -98,3 +98,4 @@ if image_file:
             res_dict = json.loads(res.text)
             
             print(res_dict)
+            st.write(res_dict)
