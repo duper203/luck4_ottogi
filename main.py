@@ -16,7 +16,7 @@ def ocr_connect(image_data):
     request_json = {
         'images': [
             {
-                'format': 'jpg',
+                'format': 'png',
                 'name': 'demo'
             }
         ],
@@ -61,7 +61,7 @@ if image_file:
     if st.button("OCR 실행"):
         # Convert the image to PNG format
         image = Image.open(image_file)
-        image = image.convert("JPG")
+        image = image.convert("PNG")
         print("image:", image)
         
         
