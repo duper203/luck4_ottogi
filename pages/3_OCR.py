@@ -88,10 +88,10 @@ if image_file:
             
             for keyword in ocr_text:
                 
-                st.write(keyword)
+                # st.write(keyword)
                 ocr_keywords += keyword + " "
 
-            st.write(ocr_keywords)
+            # st.write(ocr_keywords)
             
             
             headers ={
@@ -113,7 +113,7 @@ if image_file:
             res_dict = json.loads(res.text)
             
             print('res_dict', res_dict)
-            st.write(res_dict)
+            # st.write(res_dict)
             
 
             # st.write(res_dict)
