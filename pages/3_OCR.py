@@ -20,7 +20,7 @@ def ocr_connect(image_file):
     api_url = 'https://97c3ecilit.apigw.ntruss.com/custom/v1/24213/3330ee526497f746fcd16ae438b02b1fc334fb816c12edc24d4b448753f718c3/general'
     secret_key = 'a2d2bnVzTUVrYndHZEZ0RGxBd3pHV0ZXcXlQWlFNUVg='
     
-    keyword_list = []
+    keyword_list = ''
     
     request_json = {
         'images': [
@@ -53,7 +53,9 @@ def ocr_connect(image_file):
                 if 'fields' in image_info:
                     for field in image_info['fields']:
                         print(f"{field['inferText']}")
-                        keyword_list.append(field['inferText'])
+                        keyword_list += "field['inferText']" + " "
+
+        
         else:
             print("이미지 정보를 찾을 수 없습니다.")
     else:
