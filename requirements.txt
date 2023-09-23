@@ -9,5 +9,4 @@ pandas
 konlpy
 uuid
 base64
-time
 tempfile
