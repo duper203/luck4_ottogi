@@ -8,5 +8,4 @@ st_pages
 pandas
 konlpy
 uuid
-base64
 tempfile
