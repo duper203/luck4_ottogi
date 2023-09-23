@@ -7,7 +7,6 @@ nltk
 st_pages
 pandas
 konlpy
-PIL
 io
 uuid
 base64
