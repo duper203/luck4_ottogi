@@ -20,7 +20,7 @@ def ocr_connect(image_file):
     api_url = 'https://97c3ecilit.apigw.ntruss.com/custom/v1/24213/3330ee526497f746fcd16ae438b02b1fc334fb816c12edc24d4b448753f718c3/general'
     secret_key = 'a2d2bnVzTUVrYndHZEZ0RGxBd3pHV0ZXcXlQWlFNUVg='
     
-    keyword_list = ''
+    keyword_list = []
     
     request_json = {
         'images': [
@@ -53,7 +53,8 @@ def ocr_connect(image_file):
                 if 'fields' in image_info:
                     for field in image_info['fields']:
                         print(f"{field['inferText']}")
-                        keyword_list += f"{field['inferText']} "
+                        keyword_list.append(field['inferText'])
+            
 
         
         else:
@@ -61,12 +62,15 @@ def ocr_connect(image_file):
     else:
         print(f"API 요청 실패: {response.status_code}")
         print(response.text)
+    # keyword_string = ' '.join(keyword_list)
     
     return keyword_list
         
 
 st.title("💨Take a Photo and Search for the Recipe !Right Away!")
 image_file = st.file_uploader("이미지 업로드", type=['png', 'jpg', 'jpeg'])
+
+
 ocr_keywords = ""
 if image_file:
     print("image_file:",image_file)
