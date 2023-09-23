@@ -30,7 +30,7 @@ es = Elasticsearch(
 st.set_page_config(page_title="💬Chat with the Food" , page_icon="💬", layout="centered", initial_sidebar_state="auto", menu_items=None)
 # openai.api_key = st.secrets.openai_key
 ## hide
-# openai.api_key = st.secrets["openapi_key"]
+openai.api_key = st.secrets["openapi_key"]
 ##
 
 st.title("Chat with the Ottogi 💬")
