@@ -5,7 +5,5 @@ openai
 llama-index
 nltk
 st_pages
-pandas
+pypdf
 konlpy
-uuid
-tempfile
