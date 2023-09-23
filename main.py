@@ -67,6 +67,10 @@ with col1:
     st.info("Langchain",icon="☁️")
 with col2:
     st.info("Lalma Index",icon="☁️")
+# 이미지 파일 경로
+image_path = './img/chatbot.png' 
+# 이미지를 화면에 표시
+st.image(image_path, caption='Our technology stack : Chat about Reviews', use_column_width=True)
 
 st.markdown("---")
 
