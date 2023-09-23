@@ -89,7 +89,7 @@ if image_file:
             for keyword in ocr_text:
                 
                 st.write(keyword)
-                ocr_keywords += keyword
+                ocr_keywords += keyword + " "
 
             st.write(ocr_keywords)
             
