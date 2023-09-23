@@ -7,9 +7,7 @@ nltk
 st_pages
 pandas
 konlpy
-io
 uuid
 base64
 time
 tempfile
-json
