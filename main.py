@@ -71,6 +71,14 @@ with col2:
 image_path = './img/chatbot.png' 
 # 이미지를 화면에 표시
 st.image(image_path, caption='Our technology stack : Chat about Reviews', use_column_width=True)
+with st.expander("Detailed explanation of this technology stack"):
+    st.write("🇰🇷 KOR")
+    st.write("1. **입력값에 따른 리뷰 데이터 가져오기**: 프롬프트에 사용자가 알고 싶은 리뷰를 입력 할 경우, 입력 값에 따른 리뷰들을 엘라스틱 서치에서 가져옵니다.")
+    st.write("2. **람마인덱스와 챗지피티**: 해당 데이터를 바탕으로 람마인덱스와 챗지피트를 이용하여 사용자가 원하는 정보를 알려줍니다")
+
+    st.write("🌎 ENG")
+    st.write("1. **Fetch Review Data Based on Input**: When the user enters the reviews they want to know about in the prompt, we retrieve reviews based on the input from Elasticsearch.")
+    st.write("2. **Lambda Index and ChatGPT**: Using this data, we use Lambda Index and ChatGPT to provide users with the information they desire.")
 
 st.markdown("---")
 
