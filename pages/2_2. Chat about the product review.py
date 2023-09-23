@@ -11,9 +11,9 @@ from konlpy.tag import Okt
 
 
 # elastic setting
-cloud_id = 'Demo_v4:YXAtbm9ydGhlYXN0LTIuYXdzLmVsYXN0aWMtY2xvdWQuY29tJGI2OTlmYzE2NWM1NzQ0YmQ4MjBjYWU5NTM0MTM3YjFiJGQ1YzIzNjViNTNjMTQwYzk5YjUyMGE2YTZkNWE2ZGQ5'
-username = 'luck4'
-password = '000000'
+api_url = st.secrets["ELASTIC_CLOUD_ID "]
+username = st.secrets["ELASTIC_USER_NAME "]
+password = st.secrets["ELASTIC_PASSWORD "]
 index_name='ottogi_review_v1'
 
 
