@@ -119,27 +119,26 @@ if image_file:
             # st.write(res_dict)
             
             
+            st.subheader("🍽️ Recipies Available for this product")
             
-            # st.subheader("🍽️ Recipies Available for this product")
+            recipe_result_dict = res_dict['recipe_result_dict']
+            i = 0
+            for key, value in recipe_result_dict.items():
+                st.write(f"🍌 {key} \n\n 🔗 {value}")
+                i += 1
+            st.write(res_dict['recipe_result_dict'])
             
-            # recipe_result_dict = res_dict['recipe_result_dict']
-            # i = 0
-            # for key, value in recipe_result_dict.items():
-            #     st.write(f"🍌 {key} \n\n 🔗 {value}")
-            #     i += 1
-            # st.write(res_dict['recipe_result_dict'])
-            
-            # st.subheader("🗂️TOP 5 REVIEWS")
-            # review_dict = res_dict['search_results']
+            st.subheader("🗂️TOP 5 REVIEWS")
+            review_dict = res_dict['search_results']
 
-            # if len(review_dict) < 5:
-            #     for reviews in review_dict:
-            #         review = reviews['review']
-            #         st.write(f"📍{review}")
+            if len(review_dict) < 5:
+                for reviews in review_dict:
+                    review = reviews['review']
+                    st.write(f"📍{review}")
                     
-            # else:       
-            #     for i in range(0, 5):
-            #         reviews=review_dict[i]
-            #         review = reviews['review']
-            #         st.write(f"📍{review}")
+            else:       
+                for i in range(0, 5):
+                    reviews=review_dict[i]
+                    review = reviews['review']
+                    st.write(f"📍{review}")
             
