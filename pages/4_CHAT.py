@@ -9,7 +9,6 @@ import pandas as pd
 from konlpy.tag import *
 from konlpy.tag import Okt
 
-openai.api_key = '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'
 
 # elastic setting
 cloud_id = 'Demo_v4:YXAtbm9ydGhlYXN0LTIuYXdzLmVsYXN0aWMtY2xvdWQuY29tJGI2OTlmYzE2NWM1NzQ0YmQ4MjBjYWU5NTM0MTM3YjFiJGQ1YzIzNjViNTNjMTQwYzk5YjUyMGE2YTZkNWE2ZGQ5'
