@@ -103,7 +103,7 @@ if image_file:
             }
         
         
-            res = requests.get(url="https://azvkqnar1c.execute-api.ap-northeast-2.amazonaws.com/default/luck4_ottogi", headers=headers, json=body)
+            res = requests.get(url=st.secrets["LAMBDA_ENDPOINT_URL_1"], headers=headers, json=body)
             print(res)
             print('res.text', res.text)
             result = res.text.encode('utf-8').decode('unicode_escape')
