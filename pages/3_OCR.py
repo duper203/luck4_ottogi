@@ -53,7 +53,7 @@ def ocr_connect(image_file):
                 if 'fields' in image_info:
                     for field in image_info['fields']:
                         print(f"{field['inferText']}")
-                        keyword_list += "field['inferText']" + " "
+                        keyword_list += f"{field['inferText']} "
 
         
         else:
