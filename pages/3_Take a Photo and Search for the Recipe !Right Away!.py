@@ -135,11 +135,11 @@ if image_file:
             if len(review_dict) < 5:
                 for reviews in review_dict:
                     review = reviews['review']
-                    st.write(f"📍{review}")
+                    st.info(f"{review}",icon="📱")
                     
             else:       
                 for i in range(0, 5):
                     reviews=review_dict[i]
                     review = reviews['review']
-                    st.write(f"📍{review}")
+                    st.info(f"{review}",icon="📱")
             
