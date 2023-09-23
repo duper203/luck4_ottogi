@@ -68,7 +68,7 @@ def ocr_connect(image_file):
         
 
 st.title("🤳🏻 Take a Photo and Search for the Recipe !Right Away!")
-st.info("While shopping at the store, if you have any questions about a product, simply take a photo, and our service will provide you with the latest reviews and essential information 😆\n\n 마트에서 쇼핑 중 궁금한 상품이 있다면, 바로 사진을 업로드하여 최신 리뷰와 기본 정보들을 살펴보세요! 이 상품으로 어떤 요리를 만들 수 있을지 지금 바로 찾아볼 수 있어요!", icon="💡")
+st.info("While shopping at the store, if you have any questions about a product, simply take a photo, and our service will provide you with the latest reviews and essential information 😆\n\n 마트에서 쇼핑 중 궁금한 오뚜기 상품이 있다면, 바로 사진을 업로드하여 최신 리뷰와 기본 정보들을 살펴보세요! 이 상품으로 어떤 요리를 만들 수 있을지 지금 바로 찾아볼 수 있어요!", icon="💡")
 image_file = st.file_uploader("이미지 업로드", type=['png', 'jpg', 'jpeg'])
 
 
