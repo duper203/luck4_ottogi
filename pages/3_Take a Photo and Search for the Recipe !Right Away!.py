@@ -119,11 +119,15 @@ if image_file:
             # st.write(res_dict)
             
             
-            st.subheader("🍽️ Recipies Available for this product")
+            
             
             recipe_result_dict = res_dict['recipe_result_dict']
             i = 0
             for key, value in recipe_result_dict.items():
+                if(key=="오뚜기"):
+                    st.subheader("🍽️ The official Ottogi recipe using Ottogi ingredients.")
+                else:
+                    st.subheader("🍽️ Recipies Available for this product")
                 st.info(f"🥗 레시피 이름 :  {key} \n\n 🔗 링크 바로가기 : {value}")
                 
                 i += 1
