@@ -126,7 +126,7 @@ if image_file:
             for key, value in recipe_result_dict.items():
                 st.write(f"🍌 {key} \n\n 🔗 {value}")
                 i += 1
-            st.write(res_dict['recipe_result_dict'])
+            # st.write(res_dict['recipe_result_dict'])
             
             st.subheader("🗂️TOP 5 REVIEWS")
             review_dict = res_dict['search_results']
