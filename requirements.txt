@@ -5,3 +5,12 @@ openai
 llama-index
 nltk
 st_pages
+pandas
+konlpy
+PIL
+io
+uuid
+base64
+time
+tempfile
+json
