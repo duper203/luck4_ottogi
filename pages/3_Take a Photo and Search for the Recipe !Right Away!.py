@@ -124,8 +124,8 @@ if image_file:
             recipe_result_dict = res_dict['recipe_result_dict']
             i = 0
             for key, value in recipe_result_dict.items():
-                st.info(f"🥗 레시피 이름 :  {key} \n\n 🔗 {value}")
-                st.markdown(f"click on the following link to view the recipe! :\n\n <a href='{value}'>🔗 Click here to explore further.</a>")
+                st.info(f"🥗 레시피 이름 :  {key} \n\n 🔗 링크 바로가기 : {value}")
+                
                 i += 1
             # st.write(res_dict['recipe_result_dict'])
             
