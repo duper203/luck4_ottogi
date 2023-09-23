@@ -34,6 +34,8 @@ openai.api_key = st.secrets["openapi_key"]
 ##
 
 st.title("Chat with the Ottogi 💬")
+st.info("Introducing a service that utilizes a GPT model generated from user reviews, allowing you to search for product feedback all in one place! 사용자들의 리뷰를 수집하여 만들어진 GPT를 활용하여,  제품 후기 정보들을 대화 형태로 검색할 수 있는 GPT서비스 입니다 :) ", icon="💡")
+
 
 if "messages" not in st.session_state.keys(): # Initialize the chat messages history
     st.session_state.messages = [
