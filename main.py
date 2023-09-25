@@ -11,7 +11,7 @@ from konlpy.tag import Okt
 
 st.title("LUCK4 OTTOGI")
 
-st.markdown("made by \n\n 숙명여자대학교 소프트웨어학부 김다연, 김혜수")
+st.markdown("made by 숙명여자대학교 소프트웨어학부 김다연, 김혜수")
 
 
 # 스택 설명 1
