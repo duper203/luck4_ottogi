@@ -90,7 +90,7 @@ if image_file:
                 # st.write(keyword)
                 ocr_keywords += keyword + " "
 
-            # st.write(ocr_keywords)
+            st.write(ocr_keywords)
             
             
             headers ={
