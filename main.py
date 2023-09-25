@@ -11,6 +11,9 @@ from konlpy.tag import Okt
 
 st.title("LUCK4 OTTOGI")
 
+st.write("made by \n\n 숙명여자대학교 소프트웨어학부 김다연, 김혜수")
+
+
 # 스택 설명 1
 st.subheader("🚀 Our technology stack : Lambda for OCR")
 st.info("When a user uploads a product image, we utilize OCR (Optical Character Recognition) to discern product information and subsequently provide relevant recipes and essential details pertaining to the product.",icon="💡")
