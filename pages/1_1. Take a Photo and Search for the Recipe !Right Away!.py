@@ -155,12 +155,12 @@ else:
     with col2:
         st.markdown("The result is ... ")
         # 이미지 파일 경로
-        image_path = './img/example2.jpeg' 
+        image_path = './img/example2.png' 
         # 이미지를 화면에 표시
         st.image(image_path, use_column_width=True)
     with col3:
         # 이미지 파일 경로
-        image_path = './img/example3.jpeg' 
+        image_path = './img/example3.png' 
         # 이미지를 화면에 표시
         st.image(image_path, use_column_width=True)
     
