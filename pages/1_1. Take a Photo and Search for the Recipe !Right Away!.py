@@ -144,4 +144,26 @@ if image_file:
                     reviews=review_dict[i]
                     review = reviews['review']
                     st.info(f"{review}",icon="📱")
+else:
+    col1, col2,col3 = st.columns(3)
+    with col1:
+        st.markdown("If image is ... ")
+        # 이미지 파일 경로
+        image_path = './img/jinramen.jpeg' 
+        # 이미지를 화면에 표시
+        st.image(image_path, use_column_width=True)
+    with col2:
+        st.markdown("The result is ... ")
+        # 이미지 파일 경로
+        image_path = './img/example2.jpeg' 
+        # 이미지를 화면에 표시
+        st.image(image_path, use_column_width=True)
+    with col3:
+        # 이미지 파일 경로
+        image_path = './img/example3.jpeg' 
+        # 이미지를 화면에 표시
+        st.image(image_path, use_column_width=True)
+    
+
+    
             
