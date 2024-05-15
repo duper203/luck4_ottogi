@@ -1,10 +1,13 @@
 # 'Chef in my hand'
 ## 1. For Website Results & Details
 [click here](https://pentagonal-safflower-f3e.notion.site/Ottogi-X-AWS-Hackathon-Result-33f38d6400ec44a384d59d3c2b03cf3b)
-• Hackathon project : Ottogi X AWS hackathon - South Korea
-• Data analysis and visualization with Ottogi company’s data using ‘Elastic Search’
-• Take a photo of a food product of Ottogi’s and search for the recipe right away using ‘OCR’
-• Developed a specialized ‘chat assistant’ about the product reviews using ‘GPT’, ‘Llama Index’• Hackathon project : Ottogi X AWS hackathon - South Korea • Data analysis and visualization with Ottogi company’s data using ‘Elastic Search’ • Take a photo of a food product of Ottogi’s and search for the recipe right away using ‘OCR’ • Developed a specialized ‘chat assistant’ about the product reviews using ‘GPT’, ‘Llama Index’
+<br/><br/>
+• Hackathon project : Ottogi X AWS hackathon - South Korea<br/>
+• Data analysis and visualization with Ottogi company’s data using ‘Elastic Search’<br/>
+• Take a photo of a food product of Ottogi’s and search for the recipe right away using ‘OCR’<br/>
+• Developed a specialized ‘chat assistant’ about the product reviews using ‘GPT’, ‘Llama Index’<br/>
+• Hackathon project : Ottogi X AWS hackathon - South Korea • Data analysis and visualization with Ottogi company’s data using ‘Elastic Search’ <br/>
+• Take a photo of a food product of Ottogi’s and search for the recipe right away using ‘OCR’ • Developed a specialized ‘chat assistant’ about the product reviews using ‘GPT’, ‘Llama Index’<br/>
 
 ## 2. Skills
 Python · AWS · OpenAI · LlamaIndex · Elasticsearch · Naver Clova OCR
